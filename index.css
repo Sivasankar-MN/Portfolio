@@ -7,6 +7,15 @@ body {
     color: #333;
     line-height: 1.6;
 }
+.profile-image {
+    width: 20%;
+    height: auto;
+    max-width: 150px;
+    aspect-ratio: 1;
+    border-radius: 50%;
+    object-fit: cover;
+    margin: 0 auto;
+}
 
 .container {
     width: 90%;
@@ -20,7 +29,7 @@ body {
 
 /* Header Styles */
 .header {
-    background-color: #550c52;
+    background: linear-gradient(rgb(43, 43, 125),black);
     color: #fff;
     text-align: center;
     padding: 30px 0;
@@ -35,21 +44,26 @@ body {
 .header-subtitle {
     font-size: 1.2em;
     margin-top: 10px;
-    color: #ffe66d;
+    color: #d5cc9b;
 }
 
 .nav {
-    
+    display: flex;
+    gap: 1rem;
+    margin-top: 1rem;
+    justify-content: center;
 }
-
 .nav-link {
-    color: #ffe66d;
+    color: white;
     text-decoration: none;
-    margin: 0 15px;
-    font-size: 1.2em;
-    transition: color 0.3s ease;
+    display: flex;
+    align-items: center;
+    gap: 0.5rem;
 }
-
+.nav-icon {
+    width: 24px;
+    height: 24px;
+}
 .nav-link:hover {
     color: #fff;
 }
@@ -58,12 +72,12 @@ body {
 #about {
     background-color: #fff;
     text-align: center;
-    border-bottom: 3px solid #550c52;
+    border-bottom: 3px solid #413484;
 }
 
 #about h2 {
     font-size: 2em;
-    color: #550c52;
+    color: #1b1b6f;
 }
 
 #about p {
@@ -79,9 +93,36 @@ body {
 
 #projects h2 {
     font-size: 2em;
-    color: #550c52;
+    color: #1b1b6f;
     text-align: center;
     margin-bottom: 40px;
+}
+.skills-list {
+    list-style-type: none;
+    padding: 0;
+}
+.section-icon {
+    margin-right: 10px;
+}
+section {
+    padding: 2rem;
+}
+.card {
+    background: white;
+    border-radius: 10px;
+    padding: 2rem;
+    margin-bottom: 2rem;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    transition: transform 0.2s;
+}
+
+.card:hover {
+    transform: scale(1.02);
+}
+
+
+.skills-list li {
+    padding: 0.5rem 0;
 }
 
 .project-grid {
@@ -114,7 +155,7 @@ body {
 
 .project-item h3 {
     font-size: 1.5em;
-    color: #550c52;
+    color: #1b1b6f;
     margin: 15px;
 }
 
@@ -128,12 +169,12 @@ body {
 #contact {
     background-color: #fff;
     text-align: center;
-    border-top: 3px solid #550c52;
+    border-top: 3px solid #1b1b6f;
 }
 
 #contact h2 {
     font-size: 2em;
-    color: #550c52;
+    color: #1b1b6f;
 }
 
 #contact p {
@@ -142,20 +183,20 @@ body {
 }
 
 #contact a {
-    color: #550c52;
+    color:#1b1b6f;
     text-decoration: none;
     font-weight: bold;
     transition: color 0.3s ease;
 }
 
 #contact a:hover {
-    color: #ffe66d;
+    color: #ebe6cb;
 }
 
 /* Footer Styles */
 .footer {
-    background-color: #550c52;
-    color: #ffe66d;
+    background: linear-gradient(rgb(43, 43, 125),black);
+    color: #b6b29c;
     text-align: center;
     padding: 15px 0;
     margin-top: 20px;
@@ -189,7 +230,7 @@ body {
     display: block;
     width: 0;
     height: 2px;
-    background: #ffe66d;
+    background: #dddbd2;
     transition: width 0.3s ease;
 }
 
