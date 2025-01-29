@@ -53,6 +53,13 @@ body {
     margin-top: 1rem;
     justify-content: center;
 }
+@media (min-width: 768px) {
+    .nav {
+        flex-direction: row;
+        justify-content: space-around;
+    }
+}
+
 .nav-link {
     color: white;
     text-decoration: none;
